@@ -31,7 +31,7 @@
         // Are we loading an element from the page or a URL?
         if ( url.indexOf("#") === 0 ) {                
             // Load a page element                
-            $(url).clone(true).appendTo( $pageslide.empty() ).show();
+            $(url).appendTo( $pageslide.empty() ).show();
         } else {
             // Load a URL. Into an iframe?
             if( useIframe ) {
